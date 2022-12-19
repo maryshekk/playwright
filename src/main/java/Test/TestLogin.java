@@ -25,12 +25,17 @@ public class TestLogin extends BaseTest {
     @DisplayName("all log in checks")
     public void succesfullLoginTest() {
         LoginPage loginPage = new LoginPage(page);
+
         PlaywrightAssertions.assertThat(loginPage.logIn(user2).getPage().locator(SUMBIT_ERROR)).isVisible();
         PlaywrightAssertions.assertThat(loginPage.logIn(user3).getPage().locator(SUMBIT_ERROR)).isVisible();
+
         loginPage = new LoginPage(browser.newContext().newPage().navigate(URL).frame().page());
+
         PlaywrightAssertions.assertThat(loginPage.logIn(user4).getPage().locator(SUMBIT_ERROR)).isVisible();
         PlaywrightAssertions.assertThat(loginPage.logIn(user5).getPage().locator(SUMBIT_ERROR)).isVisible();
+
         HomePage homePage = loginPage.logIn(user1);
+        
         PlaywrightAssertions.assertThat(homePage.getPage().locator(USERBAR)).isVisible();
     }
 }
