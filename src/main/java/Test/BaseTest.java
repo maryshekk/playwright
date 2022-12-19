@@ -40,9 +40,4 @@ public class BaseTest {
     {
         page.close();
     }
-
-    public String getURL()
-    {
-        return URL;
-    }
 }

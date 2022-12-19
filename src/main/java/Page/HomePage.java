@@ -5,10 +5,8 @@ import com.microsoft.playwright.Page;
 public class HomePage {
 
     public static final String GROUPS = "//*[@data-l='t,userAltGroup']";
-    public static final String USERPAGE = "//*[@data-l='t,userPage']";
 
     private Page page;
-    private String userId;
 
     public HomePage(Page page)
     {

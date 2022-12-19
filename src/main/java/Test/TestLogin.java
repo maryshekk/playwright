@@ -3,7 +3,6 @@ import Page.HomePage;
 import Page.LoginPage;
 import ValueObject.UserBot;
 import com.microsoft.playwright.BrowserContext;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.microsoft.playwright.assertions.*;

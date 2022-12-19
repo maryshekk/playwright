@@ -4,7 +4,6 @@ import Page.GroupPage;
 import Page.UserGroupsPage.*;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
 
 import java.util.ArrayList;
 
@@ -104,9 +103,4 @@ public class CreateGroupBar {
                 return groupTypes.get(0);
         }
     }
-
-
-
-
-
 }
